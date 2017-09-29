@@ -82,28 +82,28 @@ namespace WebAPI_Notes
 
 
             ///////////////////****************************************************************/////////////////////////////
-          
-             /*
-            Web Api 2 :-WEB API allows us to program to an interface rather than concrete implementation.
 
-  |- Refrences 
-      |- AppStart
-          |-BundleConfig:- Here we register our " CSS and JS files " so that they can be bundled and minified.
+            /*
+           Web Api 2 :-WEB API allows us to program to an interface rather than concrete implementation.
 
-                           "Bundling and Minification" are two techniques to improve request load time by
-                            reducing the number of requests to the server and reducing the size of requested
-                            assets (such as CSS and JS).
-                            Microsoft provides assembly "Microsoft.Web.Optimization" for the same.
+ |- Refrences 
+     |- AppStart
+         |-BundleConfig:- Here we register our " CSS and JS files " so that they can be bundled and minified.
 
-          |-FilterConfig:- Used to add extra logic before or after action method executes.Filters can be used
-                           to provide cross-cutting features such as logging, exception handling, performance
-                           measurement, authentication and authorization.
+                          "Bundling and Minification" are two techniques to improve request load time by
+                           reducing the number of requests to the server and reducing the size of requested
+                           assets (such as CSS and JS).
+                           Microsoft provides assembly "Microsoft.Web.Optimization" for the same.
 
-                           Filters are actually attributes that can be applied on the Web API controller
-                           or one or more action methods.
+         |-FilterConfig:- Used to add extra logic before or after action method executes.Filters can be used
+                          to provide cross-cutting features such as logging, exception handling, performance
+                          measurement, authentication and authorization.
 
-                          filter class implements necessary interfaces and provides virtual
-                         methods, so that they can be overridden to add extra logic.
+                          Filters are actually attributes that can be applied on the Web API controller
+                          or one or more action methods.
+
+                         filter class implements necessary interfaces and provides virtual
+                        methods, so that they can be overridden to add extra logic.
 
 Filter Type Interface             Class Description
 
@@ -115,40 +115,45 @@ Exception Filter    IExceptionFilter ExceptionFilterAttribute    Used to handle 
 Override Filter         IOverrideFilter             --                      Used to customize the behaviour of other filter for individual action method.
 
 
-          |-IdentityConfig :- Used for Authentication/Authorization.This is for Web API Security.
-                             Here we defines "ApplicationUserManager" for Web API Application.
-                             Here we also define the password requirements for the application as well as 
-                             "place potential constraints" on name and email address.
+         |-IdentityConfig :- Used for Authentication/Authorization.This is for Web API Security.
+                            Here we defines "ApplicationUserManager" for Web API Application.
+                            Here we also define the password requirements for the application as well as 
+                            "place potential constraints" on name and email address.
 
-                            This is also where we might define two-factor authentication providers for email or SMS text,
-                            and also where we might define email account confirmation configuration.
+                           This is also where we might define two-factor authentication providers for email or SMS text,
+                           and also where we might define email account confirmation configuration.
 
-                             "RoleManager" and "DbInitializer" is also defined here.
+                            "RoleManager" and "DbInitializer" is also defined here.
 
 
-          |-RouteConfig :- Used to register various route patterns for the application.
-                           It maps request URL to a specific controller action using a Routing Table.
+         |-RouteConfig :- Used to register various route patterns for the application.
+                          It maps request URL to a specific controller action using a Routing Table.
 
-          |-Startup.Auth :- Also used for Authentication/ Authorization.
-                            The primary Authentication and Authorization strategy in Web Api is token based.
+         |-Startup.Auth :- Also used for Authentication/ Authorization.
+                           The primary Authentication and Authorization strategy in Web Api is token based.
 
-                            To access any secured portion we will be need to present an access token as a
-                            part of any incoming Http request.
+                           To access any secured portion we will be need to present an access token as a
+                           part of any incoming Http request.
 
-                            contains a partial class, Startup, which extends the default Startup class defined
-                            at the root level of the project.
+                           contains a partial class, Startup, which extends the default Startup class defined
+                           at the root level of the project.
 
-                            In " ConfigureAuth() ", here we configure options for cookie and token authentication,
-                           and, optionally, allow sign-in via various third-party providers such as Facebook
-                            and Twitter.
-                             
-                            
+                           In " ConfigureAuth() ", here we configure options for cookie and token authentication,
+                          and, optionally, allow sign-in via various third-party providers such as Facebook
+                           and Twitter.
 
- 
-          |-WebApiConfig :- Here we set up default routes for incoming requests.
-                            Web API supports code based configuration so this file is used.
 
-                            For more details visit "www.tutorialsteacher.com/webapi". */
+
+
+         |-WebApiConfig :- Here we set up default routes for incoming requests.
+                           Web API supports code based configuration so this file is used.
+
+                           For more details visit "www.tutorialsteacher.com/webapi". */
+
+
+
+            https://basicsclear.wordpress.com/2017/09/17/angular-project-publish-to-git-hub/
+            https://loiane.com/2017/08/angular-reactive-forms-trigger-validation-on-submit/
 
 
 
